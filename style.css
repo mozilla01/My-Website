@@ -1,0 +1,241 @@
+*{
+margin : 0;
+}
+.text{
+    margin-left: 10vw;
+}
+a{
+    text-decoration: none;
+    color : black;
+}
+.nav{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 6rem;
+    align-items: center;
+    /* margin : 30px 30px; */
+    padding-right: 2rem;
+}
+.nav_item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 5em;
+    border: 2ch;
+}
+#logo{
+    flex-grow : 0.25;
+    background-color: black;
+    color : white;
+    max-width: 4em;
+}
+.header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /* margin-bottom: 7rem; */
+    /* justify-content: center; */
+    gap : 5em;
+    background-color: bisque;
+    padding-top: 10em;
+    padding-bottom: 12rem;
+    min-height: 4rem;
+}
+#main_title{
+    grid-area: 1 / 1 /span 1/span 1;
+    font-size: 4em;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 1em;
+    /* text-align: center; */
+    /* margin-left: 10vw; */
+}
+#resumelink{
+    grid-area: 2 / 1/span 2/span 1;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    width : 200px;
+    max-height: 1.3em;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 1.1em;
+    margin-left: 0px;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 0.4rem 0.4rem;
+}
+.btn--theme{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding-bottom: 5px;
+}
+#avatar{
+    grid-area: 1 / 2/ span 2/ span 1;
+    margin-top: 1.5em;
+    margin-right: 1.3em;
+}
+.intro{
+    display: flex;
+    max-width: max-content;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    flex-wrap :wrap;
+}
+.whoami{
+    font-size: 3rem;
+    font-family: 'Anek Telugu', sans-serif;
+}
+.desc{
+    max-width: 50vw;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+    padding-right: 1.1rem;
+}
+.linkedin{
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 15vw;
+    padding: 0.5rem 0.5rem;
+}
+.githublink{
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 2em;
+    padding: 0.5rem 0.5rem;
+}
+/* .introText{
+    margin-left: 10vw;
+} */
+.img{
+    margin-top: 4em;
+    margin-left: 120px;
+}
+@media all and (max-width : 1050px){
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #main_title{
+        order: 1;
+        margin : 0px 0px;
+        max-width: 80vw;
+        text-align: center;
+    }
+    #avatar{
+        order: 2;
+        margin: 0;
+    }
+    #resumelink{
+        order : 3;
+    }
+    .linkedin{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .githublink{
+        display: inline-block;
+    }
+}
+
+.aboutMe{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    background-color: bisque;
+}
+.bitmore{
+    font-size: 3rem;
+    font-family: 'Anek Telugu', sans-serif;
+}
+.desc1{
+    max-width: 50vw;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+.services{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+.myservices{
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 3rem;
+}
+.webdev{
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.desc2{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    
+}
+.cpp{
+    background: rgb(141, 210, 216);
+    padding : 30px 40px;
+    border-radius: 50%;
+}
+.html{
+    background: rgb(141, 210, 216);
+    padding : 30px 30px;
+    border-radius: 50%;
+}
+.css{
+    background: rgb(141, 210, 216);
+    padding : 30px 50px;
+    border-radius: 50%;
+}
+.js{
+    background: rgb(141, 210, 216);
+    padding : 30px 40px;
+    border-radius: 50%;
+}
+.skill :hover{
+    animation-name: enlarge;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction :normal;
+    animation-fill-mode: forwards;
+}
+.skill{
+    margin: 15px;
+}
+@keyframes enlarge{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.3,1.3);
+    }
+}
+.dark{
+    color: white;
+    background-color: rgb(19, 18, 18);
+}
