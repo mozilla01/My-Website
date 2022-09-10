@@ -1,5 +1,7 @@
 'use strict';
 const themeToggle = document.getElementById('themeToggle');
+
+// #FIXME
 window.addEventListener('load', function(){
     if(!this.localStorage.getItem('theme')){
         this.localStorage.setItem('theme', 'light');
@@ -33,6 +35,7 @@ window.addEventListener('load', function(){
                 document.getElementById('resumelink').style.backgroundColor = '#ffffff';
                 document.getElementById('resumelink').style.color = '#000000';
                 document.getElementById('themeToggle').style.backgroundColor = '#ffffff';
+                document.getElementById('navig').style.backgroundColor = ' rgba(0, 0, 0, 0.8)';
             }
             else{
                 localStorage.setItem('theme','light');
@@ -46,7 +49,7 @@ window.addEventListener('load', function(){
                 document.getElementById('resumelink').style.backgroundColor = '#000000';
                 document.getElementById('resumelink').style.color = '#ffffff';
                 document.getElementById('themeToggle').style.backgroundColor = '#000000';
-                
+                document.getElementById('navig').style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
             }
         
             document.body.classList.toggle('dark');
