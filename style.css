@@ -186,6 +186,12 @@ a{
     .githublink{
         display: inline-block;
     }
+    .desc{
+        min-width: 80vw;
+    }
+    .desc1{
+        min-width: 80vw;
+    }
 }
 
 .aboutMe{
